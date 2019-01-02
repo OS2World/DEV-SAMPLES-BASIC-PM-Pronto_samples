@@ -1,0 +1,16 @@
+"PRONTO! PM is a library which enable the Basic programmer", 2, 2, 9
+"to instantly start PM programming.", 2 , 3, 9
+"With this library you can port you non PM code to run under", 2, 4, 9
+"this new windowing environment, without learning a lot", 2, 5, 9
+"of manuals. PRONTO! PM is brought to you from:", 2, 6, 9
+"Artel Informatica U.S.A.", 2, 8, 8
+"575 Anton Boulevard 3rd floor", 2, 9, 8
+"Costa Mesa, CA 92626", 2, 10, 8
+"Ph:  (714) 432 6343", 2, 11, 8
+"Ph:  (714) 432 6344", 2, 12, 8
+"Fax: (714) 432 6598" , 2, 13, 8
+"This is a text output test.", 10, 15, 1
+"To achieve this result", 22, 16, 2
+"you need only one function call: Bxqprint!", 22, 17, 3
+"Coordinates are expressed", 22, 18, 4
+"in row and column.", 22, 19, 5

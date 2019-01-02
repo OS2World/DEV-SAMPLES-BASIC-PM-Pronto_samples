@@ -1,0 +1,30 @@
+
+BCFLAGS = -O -Z -Zi
+
+.bas.obj:
+	copy pronto.mac+$*.bas $*.tmp
+	pmacro $*.tmp > $*.bpm
+	c:\bc7\binb\bc $*.bpm $(BCFLAGS);
+	del $*.tmp
+
+# eseguibile
+pro.exe : pro.obj pro.res pro.def
+     link @<<
+pro.obj +
+pronto.obj /A:16
+pro.exe
+nul /NOD /NOE /NOI /CO
+c:\bc7\lib\bcl71enp.lib+
+os2.lib+
+pronto.lib
+pro.def
+<<
+     rc pro.res pro.exe
+
+
+# resource file
+pro.res: pro.rc
+    rc -r pro.rc
+
+# programma basic
+pro.obj: pro.bas

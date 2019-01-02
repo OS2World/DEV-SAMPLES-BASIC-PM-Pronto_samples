@@ -1,0 +1,24 @@
+#define INCL_WIN
+
+#include <os2.h>
+#include "where.h"
+
+MENU 501 PRELOAD
+{
+  SUBMENU "~Demos", 501+1
+  {
+    MENUITEM "~Search...\t^S",	  503
+    MENUITEM "~Calendar...\t^C",  504
+    MENUITEM "~About",		  505
+    MENUITEM SEPARATOR
+    MENUITEM "~Quit",	  SC_CLOSE, MIS_SYSCOMMAND
+  }
+}
+
+ACCELTABLE 701
+{
+   "^C", 504
+   "^S", 503
+}
+
+rcinclude where.dlg

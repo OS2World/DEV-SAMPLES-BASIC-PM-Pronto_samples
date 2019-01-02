@@ -1,0 +1,50 @@
+*************************************************************************
+
+           Welcome to the PRONTO! PM demo disk.
+
+To run the demo please do the following:
+
+- copy the file PRO.EXE  in your working directory
+- copy the file PRONTO.TXT  in your working directory
+- copy the file PMBTOOL.CFG in your working directory
+
+- copy the file PMBRES.DLL in a directory listed in
+  the LIBPATH variable in your CONFIG.SYS file
+- copy the file PRONTO.DLL in a directory listed in
+  the LIBPATH variable in your CONFIG.SYS file
+
+  ***********************************************************
+  Please note that without this DLLs on line the program will
+  not start at all!
+  ***********************************************************
+
+Now you can install the PRO.EXE file in a program group
+of you choice or run it directly from a OS/2 shell.
+
+For your convenience we included the source code PRO.BAS
+to let you see how PRONTO! PM is used in your programs.
+Use it as a reference while running the demo; since the demo is not
+a full application the source code has a documentation scope only.
+
+For further informations about PRONTO! PM please feel free to contact
+us at the following:
+
+				   Artel Informatica Software House
+				   Via Nazionale, 128
+				   36056 Belvedere di Tezze (VI)
+				   Italy
+				   Ph:  39 424 561444
+				   Fax: 39 424 561404
+
+				   or
+
+				   Artel Informatica U.S.A.
+				   575 Anton Boulevard 3rd floor
+				   Costa Mesa, CA 92626
+				   Ph:	(714) 432 6343
+				   Ph:	(714) 432 6344
+				   Fax: (714) 432 6598
+
+(C)1990 Artel Informatica Corp.
+
+*************************************************************************

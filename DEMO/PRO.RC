@@ -1,0 +1,60 @@
+#define INCL_WIN
+
+#include <os2.h>
+
+MENU 501 PRELOAD
+{
+  SUBMENU "~Functions", 501+1
+  {
+    MENUITEM "~File...",	  501+2
+    MENUITEM "~User menu",	   501+3
+    MENUITEM "~Change menu", 501+4
+    MENUITEM "~Print test",	   501+5
+    MENUITEM "~Line test",	   501+6
+    MENUITEM "~Box test",	   501+26
+    MENUITEM "~Clear screen",	    501+7
+    MENUITEM "Cl~ock",	   501+8
+    MENUITEM SEPARATOR
+    MENUITEM "~Quit",	  SC_CLOSE, MIS_SYSCOMMAND
+  }
+  SUBMENU "~Input", 501+10
+  {
+    MENUITEM "~First dialog box...",   501+11
+    MENUITEM "~Second dialog box...",  501+12
+    MENUITEM "~Cursor", 	       501+13
+    MENUITEM "~Input field",	       501+27
+    MENUITEM "~Memo editor",	       501+14
+    MENUITEM "Ch~ange Pointer",	       501+15
+    MENUITEM "~YAD...", 	       501+16
+  }
+  SUBMENU "O~utput", 501+20
+  {
+    MENUITEM "C~oordinates",		501+21, MIS_TEXT|MIA_CHECKED
+    MENUITEM "Text ~output",		501+22
+    MENUITEM "~Torture Test",		501+23
+    MENUITEM "Panel ~1",		501+24
+    MENUITEM "Panel ~2",		501+25
+  }
+}
+
+MENU 601 PRELOAD
+{
+  SUBMENU "~Alternate", 601+1
+  {
+    MENUITEM "~Confirm",	601+2
+    MENUITEM "~Error test",	601+3
+    MENUITEM "~Back to first menu", 601+4
+  }
+}
+
+ACCELTABLE 701
+{
+   "^P", 506
+   "^C", 522
+   "^L", 507
+   "^V", 509
+}
+
+ICON 801 arca.ico
+
+rcinclude pro.dlg
